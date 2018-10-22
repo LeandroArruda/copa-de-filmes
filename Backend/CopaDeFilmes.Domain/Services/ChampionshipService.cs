@@ -9,7 +9,7 @@ namespace CopaDeFilmes.Domain.Services
     {
         public List<Movie> IdentifyTheWinner(List<Movie> movies)
         {
-            var afterFirstRound = FirstRound(movies);
+            var afterFirstRound = FirstRound(movies.OrderBy(m => m.Titulo).ToList());
             var result = OtherRounds(afterFirstRound);
             return result;
         }

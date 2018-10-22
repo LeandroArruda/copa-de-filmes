@@ -1,0 +1,25 @@
+<div class="content">
+  <div class="header">
+    <h5 class="app-title">CAMPEONATO DE FILMES</h5>
+    <h2 class="title">{{title}}</h2>
+    <p class="description">Selecione 8 filmes que você deseja que entrem na competição e
+      depois pressione o botão "Gerar Meu Campeonato" para prosseguir</p>
+  </div>
+  <div class="content-header">
+
+    <div class="counter">
+      Selecionados {{selectedMovies.length}} de 8 filmes
+    </div>
+
+    <button type="button" class="btnCampeonato">GERAR MEU CAMPEONATO</button>
+  </div>
+  <br>
+  <div class="selection-area">
+    <div *ngFor="let movie of movies" class="movie">
+      <div>
+        <input type="checkbox" (click)="addMovie(movie)" title="{{movie.ano}}" />
+      </div>
+      <span>{{movie.titulo}}</span>
+    </div>
+  </div>
+</div>
