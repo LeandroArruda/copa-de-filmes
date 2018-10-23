@@ -4,15 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import { ResultsComponent } from './results/results.component';
-import { SelectionComponent } from './selection/selection.component';
+import { ResultsComponent } from './components/results/results.component';
+import { SelectionComponent } from './components/selection/selection.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ResultsComponent,
-    SelectionComponent
+    SelectionComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

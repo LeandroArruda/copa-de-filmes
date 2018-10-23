@@ -21,7 +21,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/CopaDeFilmes/bin/Debug/netcoreapp2.1/CopaDeFilme.dll",
+            "program": "${workspaceFolder}/CopaDeFilmes/bin/Debug/netcoreapp2.1/CopaDeFilmes.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
