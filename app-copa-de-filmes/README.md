@@ -1,27 +1,23 @@
 # AppCopaDeFilmes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
+Sistema para selecionar um campeonato entre filmes e depois exibir os 2 primeiros colocados.
+Consumindo 2 APIs diferentes, uma API para listar o filmes e a API que está junto nesse Workspace para realizar o processo do campeonato e devolver os 2 primeiros
 
-## Development server
+## Development servers (Front and back)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Rodar primeiro a API, navegando até a pasta 'CopaDeFilmes' e executando dotnet run.
 
-## Code scaffolding
+Rodar com `npm start`, criei um proxy para não dar o erro de CORS.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Comentários
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Não consegui finalizar a tela de exibição de resultado. Fiz uma simulação com o caso de teste descrito no pdf e deu o mesmo resultado.
+Não comecei a montar os testes unitários. No meu dia a dia uso o Nunit.
 
-## Running unit tests
+Sobre a solução que montei. Fiz em DDD para mostrar como acredito ser a melhor forma de escrever uma api seguindo o DDD:
+Uso de domain services, já que a regra em questão faz parte do domínio. Não acabou sendo o caso, mas sempre que possível coloco métodos nas classes para não ficaram anêmicas. Não coloquei porque entendi que não era a entidade Movie que detêm a lógica de fazer o campeonato. Pensando agora talvez criado um Campeonato contendo como Property uma lista de filmes e tendo mais 2 properties: FirstPlace e SecondPlace, e ela contendo o método de cálculo do campeonato em questão. De qualquer modo, também acredito que nesse caso em que o domínio é bem pequeno e não complexo, a solução mais interessante seria usar uma Azure Function, e desenhado mais simples, n usando o DDD.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Agradeço o tempo de vocês e a oportunidade, mesmo que eu não tenha tido as condições ideais!
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Obrigado
