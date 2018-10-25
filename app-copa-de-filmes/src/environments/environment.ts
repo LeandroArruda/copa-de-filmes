@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:4200/api/filmes'
+  apiMovieUrl: 'http://localhost:4200/api/filmes',
+  apiChampionshipUrl: 'http://localhost:5000/api/championship'
 };
 
 /*

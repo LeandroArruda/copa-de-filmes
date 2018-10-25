@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ChampionshipService } from '../../shared/services/championship.service';
 import { Movie } from '../../shared/models/movie.model';
+import { MovieService } from 'src/app/shared/services/movie.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-selection',
@@ -13,14 +15,16 @@ export class SelectionComponent implements OnInit {
   movies: Movie[];
   selectedMovies = [];
 
-  constructor(private championshipService: ChampionshipService) { }
+  constructor(private championshipService: ChampionshipService,
+              private movieService: MovieService,
+              private router: Router) { }
 
   ngOnInit() {
     this.getMoviesSelection();
   }
 
   getMoviesSelection() {
-    this.championshipService.getMovies().subscribe(
+    this.movieService.getMovies().subscribe(
       res => this.movies = res,
       error => console.error('Erro em getMoviesSelection', error)
     );
@@ -32,6 +36,7 @@ export class SelectionComponent implements OnInit {
 
   startChampionship() {
     this.championshipService.startChampionship(this.selectedMovies);
+    this.router.navigate(['/resultado']);
   }
 
 }

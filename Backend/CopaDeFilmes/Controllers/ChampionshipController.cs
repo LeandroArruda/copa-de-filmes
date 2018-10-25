@@ -29,8 +29,8 @@ namespace CopaDeFilmes.Controllers
         {
             try
             {
-            var teste = _championshipService.IdentifyTheWinner(_mapper.Map<List<MovieViewModel>,List<Movie>>(models));
-            return _mapper.Map<List<MovieViewModel>>(teste);
+            var result = _championshipService.IdentifyTheWinner(_mapper.Map<List<MovieViewModel>,List<Movie>>(models));
+            return _mapper.Map<List<MovieViewModel>>(result);
             }
             catch(Exception ex)
             {

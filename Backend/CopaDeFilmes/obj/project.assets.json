@@ -11610,11 +11610,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leand\\Documents\\Sources\\copa-de-filmes\\Backend\\CopaDeFilmes\\CopaDeFilmes.csproj",
+      "projectUniqueName": "c:\\Users\\leand\\Documents\\Sources\\copa-de-filmes\\Backend\\CopaDeFilmes\\CopaDeFilmes.csproj",
       "projectName": "CopaDeFilmes",
-      "projectPath": "C:\\Users\\leand\\Documents\\Sources\\copa-de-filmes\\Backend\\CopaDeFilmes\\CopaDeFilmes.csproj",
+      "projectPath": "c:\\Users\\leand\\Documents\\Sources\\copa-de-filmes\\Backend\\CopaDeFilmes\\CopaDeFilmes.csproj",
       "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leand\\Documents\\Sources\\copa-de-filmes\\Backend\\CopaDeFilmes\\obj\\",
+      "outputPath": "c:\\Users\\leand\\Documents\\Sources\\copa-de-filmes\\Backend\\CopaDeFilmes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -11633,8 +11633,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\leand\\Documents\\Sources\\copa-de-filmes\\Backend\\CopaDeFilmes.Domain\\CopaDeFilmes.Domain.csproj": {
-              "projectPath": "C:\\Users\\leand\\Documents\\Sources\\copa-de-filmes\\Backend\\CopaDeFilmes.Domain\\CopaDeFilmes.Domain.csproj"
+            "c:\\Users\\leand\\Documents\\Sources\\copa-de-filmes\\Backend\\CopaDeFilmes.Domain\\CopaDeFilmes.Domain.csproj": {
+              "projectPath": "c:\\Users\\leand\\Documents\\Sources\\copa-de-filmes\\Backend\\CopaDeFilmes.Domain\\CopaDeFilmes.Domain.csproj"
             }
           }
         }

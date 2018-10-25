@@ -10,6 +10,7 @@ import { Movie } from '../../shared/models/movie.model';
 export class ResultsComponent implements OnInit {
 
   movieResults: Movie[];
+  title = 'Resultado Final';
 
   constructor(private championshipService: ChampionshipService) { }
 

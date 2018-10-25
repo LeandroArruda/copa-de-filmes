@@ -1,5 +1,5 @@
 {
-  "/api/*": {
+  "/api/filmes*": {
     "target": "http://copafilmes.azurewebsites.net",
     "secure": false,
     "logLevel": "debug",

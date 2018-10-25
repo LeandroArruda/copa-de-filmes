@@ -1,0 +1,33 @@
+.content {    
+    margin: 20px 20px 0 20px;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    min-height: 150px;
+    width: 100%;
+    background-color: gray;
+   margin-top: 20px;
+   overflow: hidden;
+}
+
+.app-title {
+    margin: 20px 0 5px 0;
+    color: lightgray;
+}
+
+.title {
+    margin-top: 5px;
+}
+
+.description {
+    width: 50%;
+    margin-left: 25%;
+    font-size: 11px;
+}
+
+
+.results-list {
+    
+}

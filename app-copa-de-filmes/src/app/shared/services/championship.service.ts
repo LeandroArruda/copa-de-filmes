@@ -10,12 +10,8 @@ export class ChampionshipService {
 
     constructor(private httpClient: HttpClient) { }
 
-    getMovies(): Observable<Movie[]> {
-        return this.httpClient.get<Movie[]>(environment.apiUrl);
-    }
-
     startChampionship(movies: Movie[]) {
-        return this.httpClient.post<Movie[]>(environment.apiUrl, movies).subscribe(
+        return this.httpClient.post<Movie[]>(environment.apiChampionshipUrl, movies).subscribe(
             result => this.championshipResults = result,
             error => console.error('Erro em startChampionship', error)
         );

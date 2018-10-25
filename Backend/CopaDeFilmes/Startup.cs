@@ -29,6 +29,7 @@ namespace CopaDeFilmes
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAutoMapper();
+            services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddScoped<IChampionshipService,ChampionshipService>();
@@ -45,6 +46,8 @@ namespace CopaDeFilmes
             {
                 app.UseHsts();
             }
+
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
             app.UseHttpsRedirection();
             app.UseMvc();
