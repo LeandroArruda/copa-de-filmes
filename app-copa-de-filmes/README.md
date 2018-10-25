@@ -16,7 +16,7 @@ Não consegui finalizar a tela de exibição de resultado. Fiz uma simulação c
 Não comecei a montar os testes unitários. No meu dia a dia uso o Nunit.
 
 Sobre a solução que montei. Fiz em DDD para mostrar como acredito ser a melhor forma de escrever uma api seguindo o DDD:
-Uso de domain services, já que a regra em questão faz parte do domínio. Não acabou sendo o caso, mas sempre que possível coloco métodos nas classes para não ficaram anêmicas. Não coloquei porque entendi que não era a entidade Movie que detêm a lógica de fazer o campeonato. Pensando agora talvez criado um Campeonato contendo como Property uma lista de filmes e tendo mais 2 properties: FirstPlace e SecondPlace, e ela contendo o método de cálculo do campeonato em questão. De qualquer modo, também acredito que nesse caso em que o domínio é bem pequeno e não complexo, a solução mais interessante seria usar uma Azure Function, e desenhado mais simples, n usando o DDD.
+Uso de domain services, já que a regra em questão faz parte do domínio. Não acabou sendo o caso, mas sempre que possível coloco métodos nas classes para não ficaram anêmicas. Não coloquei porque entendi que não era a entidade Movie que detêm a lógica de fazer o campeonato. Pensando agora talvez criado um Campeonato contendo como Property uma lista de filmes e tendo mais 2 properties: FirstPlace e SecondPlace, e ela contendo o método de cálculo do campeonato em questão. De qualquer modo, também acredito que nesse caso em que o domínio é bem pequeno e não complexo, a solução mais interessante seria usar uma Azure Function e desenhado mais simples, n usando o DDD.
 
 Agradeço o tempo de vocês e a oportunidade, mesmo que eu não tenha tido as condições ideais!
 
